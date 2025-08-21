@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
+import {  AnimatePresence } from 'framer-motion';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import HomePage from './pages/HomePage';
@@ -12,7 +12,7 @@ import UserDashboard from './pages/UserDashboard.tsx';
 import BlogPage from './pages/BlogPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
-import AIAssistantPage from './pages/AIAssistantPage';
+import AIAssistantPage from './pages/AiAssistantPage';
 import FAQPage from './pages/FAQPage';
 import PrivacyPage from './pages/PrivacyPage.tsx';
 import TermsPage from './pages/TermsPage';
@@ -25,7 +25,7 @@ import AuthPage from './pages/AuthPage';
 import WishlistPage from './pages/WishlistPage.tsx';
 import ChatBot from './components/ai/ChatBot';
 import ThemeProvider from './providers/ThemeProvider';
-import CartProvider from './providers/CartProvider';
+import CartProvider from './providers/CartProvider.tsx';
 import LanguageProvider from './providers/LanguageProvider';
 
 function App() {

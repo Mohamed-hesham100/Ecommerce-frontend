@@ -7,10 +7,6 @@ import {
   Star,
   Sparkles,
   Heart,
-  Truck,
-  Shield,
-  Clock,
-  Headphones,
   Award,
   Users,
 } from "lucide-react";

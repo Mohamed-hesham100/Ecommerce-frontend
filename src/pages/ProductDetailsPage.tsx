@@ -14,7 +14,7 @@ import {
 import ProductCard from "../components/products/ProductCard";
 import AddToCartModal from "../components/ui/AddToCartModal";
 import { useCartStore } from "../store/cartStore";
-import { useLanguage } from "../Providers/LanguageProvider";
+import { useLanguage } from "../providers/LanguageProvider";
 
 const ProductDetailsPage = () => {
   const { id } = useParams();
@@ -94,78 +94,77 @@ const ProductDetailsPage = () => {
     },
   ];
 
- const relatedProducts = [
-  {
-    id: 1,
-    name: "سيروم فيتامين C لتفتيح البشرة",
-    price: 299,
-    originalPrice: 399,
-    image:
-      "https://sadaalomma.com/wp-content/uploads/2023/02/%D8%B3%D9%8A%D8%B1%D9%88%D9%85-%D9%81%D9%8A%D8%AA%D8%A7%D9%85%D9%8A%D9%86-%D8%B3%D9%8A-%D9%84%D9%84%D9%88%D8%AC%D9%87.jpg",
-    rating: 4.8,
-    reviews: 320,
-    isBestseller: true,
-    discount: 25,
-  },
-  {
-    id: 2,
-    name: "سيروم الهيالورونيك للترطيب العميق",
-    price: 249,
-    originalPrice: 329,
-    image:
-      "https://m.media-amazon.com/images/I/41hkC+KSMwL._UF350,350_QL80_.jpg",
-    rating: 4.7,
-    reviews: 210,
-    discount: 24,
-  },
-  {
-    id: 3,
-    name: "سيروم الريتينول لمكافحة التجاعيد",
-    price: 399,
-    originalPrice: 499,
-    image:
-      "https://i0.wp.com/ashrybeauty.com/wp-content/uploads/2024/07/71hL52NbVnL._AC_SL1245_.jpg",
-    rating: 4.9,
-    reviews: 185,
-    isNew: true,
-    discount: 20,
-  },
-  {
-    id: 4,
-    name: "سيروم النياسيناميد لتقليل المسام",
-    price: 229,
-    originalPrice: 299,
-    image:
-      "https://cdn.salla.sa/nGgdb/f12e2e25-00cb-47d2-87e1-aea762c6296e-1000x1000-8FqFpiiDKERmBYoXNCmNQWkHBJo1L8q8T8SrNOHF.png",
-    rating: 4.6,
-    reviews: 145,
-    discount: 23,
-  },
-  {
-    id: 5,
-    name: "سيروم الكولاجين لشد البشرة",
-    price: 349,
-    originalPrice: 459,
-    image:
-      "https://media.taager.com/81f7f277-913c-49c7-8be0-c68dbedbdc96.jpg",
-    rating: 4.8,
-    reviews: 276,
-    isBestseller: true,
-    discount: 24,
-  },
-  {
-    id: 6,
-    name: "سيروم الأرجان المغذي للبشرة",
-    price: 279,
-    originalPrice: 359,
-    image:
-      "https://media.zid.store/d2cf4355-9148-4b03-b46e-74344b410d7f/89bdef60-ab4a-49cf-81e3-7d3c4ac04048.webp",
-    rating: 4.7,
-    reviews: 198,
-    discount: 22,
-  },
-];
-
+  const relatedProducts = [
+    {
+      id: 1,
+      name: "سيروم فيتامين C لتفتيح البشرة",
+      price: 299,
+      originalPrice: 399,
+      image:
+        "https://sadaalomma.com/wp-content/uploads/2023/02/%D8%B3%D9%8A%D8%B1%D9%88%D9%85-%D9%81%D9%8A%D8%AA%D8%A7%D9%85%D9%8A%D9%86-%D8%B3%D9%8A-%D9%84%D9%84%D9%88%D8%AC%D9%87.jpg",
+      rating: 4.8,
+      reviews: 320,
+      isBestseller: true,
+      discount: 25,
+    },
+    {
+      id: 2,
+      name: "سيروم الهيالورونيك للترطيب العميق",
+      price: 249,
+      originalPrice: 329,
+      image:
+        "https://m.media-amazon.com/images/I/41hkC+KSMwL._UF350,350_QL80_.jpg",
+      rating: 4.7,
+      reviews: 210,
+      discount: 24,
+    },
+    {
+      id: 3,
+      name: "سيروم الريتينول لمكافحة التجاعيد",
+      price: 399,
+      originalPrice: 499,
+      image:
+        "https://i0.wp.com/ashrybeauty.com/wp-content/uploads/2024/07/71hL52NbVnL._AC_SL1245_.jpg",
+      rating: 4.9,
+      reviews: 185,
+      isNew: true,
+      discount: 20,
+    },
+    {
+      id: 4,
+      name: "سيروم النياسيناميد لتقليل المسام",
+      price: 229,
+      originalPrice: 299,
+      image:
+        "https://cdn.salla.sa/nGgdb/f12e2e25-00cb-47d2-87e1-aea762c6296e-1000x1000-8FqFpiiDKERmBYoXNCmNQWkHBJo1L8q8T8SrNOHF.png",
+      rating: 4.6,
+      reviews: 145,
+      discount: 23,
+    },
+    {
+      id: 5,
+      name: "سيروم الكولاجين لشد البشرة",
+      price: 349,
+      originalPrice: 459,
+      image:
+        "https://media.taager.com/81f7f277-913c-49c7-8be0-c68dbedbdc96.jpg",
+      rating: 4.8,
+      reviews: 276,
+      isBestseller: true,
+      discount: 24,
+    },
+    {
+      id: 6,
+      name: "سيروم الأرجان المغذي للبشرة",
+      price: 279,
+      originalPrice: 359,
+      image:
+        "https://media.zid.store/d2cf4355-9148-4b03-b46e-74344b410d7f/89bdef60-ab4a-49cf-81e3-7d3c4ac04048.webp",
+      rating: 4.7,
+      reviews: 198,
+      discount: 22,
+    },
+  ];
 
   const handleAddToCart = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -227,7 +226,9 @@ const ProductDetailsPage = () => {
                       ? "border-emerald-500 shadow-lg"
                       : "border-gray-200 hover:border-emerald-300"
                   }`}
-                  aria-label={`${language === "ar" ? "اختيار الصورة" : "Select image"} ${index + 1}`}
+                  aria-label={`${
+                    language === "ar" ? "اختيار الصورة" : "Select image"
+                  } ${index + 1}`}
                 >
                   <img
                     src={image}
@@ -294,7 +295,9 @@ const ProductDetailsPage = () => {
                   <button
                     onClick={() => setQuantity(Math.max(1, quantity - 1))}
                     className="p-3 hover:bg-gray-200 rounded-r-2xl transition-colors duration-300"
-                    aria-label={language === "ar" ? "تقليل الكمية" : "Decrease quantity"}
+                    aria-label={
+                      language === "ar" ? "تقليل الكمية" : "Decrease quantity"
+                    }
                   >
                     <Minus className="w-5 h-5" />
                   </button>
@@ -304,7 +307,9 @@ const ProductDetailsPage = () => {
                   <button
                     onClick={() => setQuantity(quantity + 1)}
                     className="p-3 hover:bg-gray-200 rounded-l-2xl transition-colors duration-300"
-                    aria-label={language === "ar" ? "زيادة الكمية" : "Increase quantity"}
+                    aria-label={
+                      language === "ar" ? "زيادة الكمية" : "Increase quantity"
+                    }
                   >
                     <Plus className="w-5 h-5" />
                   </button>
@@ -317,7 +322,9 @@ const ProductDetailsPage = () => {
                   className="flex-1 flex items-center justify-center gap-3 py-4 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-bold text-lg rounded-2xl shadow-lg shadow-emerald-500/30 hover:shadow-xl hover:shadow-emerald-500/40 transition-all duration-300"
                   whileHover={{ scale: 1.02, y: -2 }}
                   whileTap={{ scale: 0.98 }}
-                  aria-label={language === "ar" ? "إضافة إلى السلة" : "Add to cart"}
+                  aria-label={
+                    language === "ar" ? "إضافة إلى السلة" : "Add to cart"
+                  }
                 >
                   <ShoppingBag className="w-6 h-6" />
                   {language === "ar" ? "أضف للسلة" : "Add to Cart"}
@@ -332,7 +339,9 @@ const ProductDetailsPage = () => {
                   }`}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  aria-label={language === "ar" ? "إضافة إلى المفضلة" : "Add to wishlist"}
+                  aria-label={
+                    language === "ar" ? "إضافة إلى المفضلة" : "Add to wishlist"
+                  }
                 >
                   <Heart
                     className={`w-6 h-6 ${isWishlisted ? "fill-current" : ""}`}
@@ -343,7 +352,9 @@ const ProductDetailsPage = () => {
                   className="p-4 bg-white border-2 border-gray-200 text-gray-700 rounded-2xl hover:border-emerald-300 hover:text-emerald-600 transition-all duration-300"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  aria-label={language === "ar" ? "مشاركة المنتج" : "Share product"}
+                  aria-label={
+                    language === "ar" ? "مشاركة المنتج" : "Share product"
+                  }
                 >
                   <Share2 className="w-6 h-6" />
                 </motion.button>
@@ -405,10 +416,22 @@ const ProductDetailsPage = () => {
         >
           <div className="flex border-b border-gray-200 flex-row-reverse">
             {[
-              { id: "details", label: language === "ar" ? "التفاصيل" : "Details" },
-              { id: "ingredients", label: language === "ar" ? "المكونات" : "Ingredients" },
-              { id: "usage", label: language === "ar" ? "طريقة الاستخدام" : "How to Use" },
-              { id: "reviews", label: language === "ar" ? "التقييمات" : "Reviews" },
+              {
+                id: "details",
+                label: language === "ar" ? "التفاصيل" : "Details",
+              },
+              {
+                id: "ingredients",
+                label: language === "ar" ? "المكونات" : "Ingredients",
+              },
+              {
+                id: "usage",
+                label: language === "ar" ? "طريقة الاستخدام" : "How to Use",
+              },
+              {
+                id: "reviews",
+                label: language === "ar" ? "التقييمات" : "Reviews",
+              },
             ].map((tab) => (
               <button
                 key={tab.id}
@@ -468,7 +491,9 @@ const ProductDetailsPage = () => {
                   transition={{ duration: 0.3 }}
                 >
                   <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                    {language === "ar" ? "المكونات الفعالة" : "Active Ingredients"}
+                    {language === "ar"
+                      ? "المكونات الفعالة"
+                      : "Active Ingredients"}
                   </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {product.ingredients.map((ingredient, index) => (
@@ -565,7 +590,9 @@ const ProductDetailsPage = () => {
                               </div>
                               {review.verified && (
                                 <div className="text-sm text-emerald-600">
-                                  {language === "ar" ? "مشتري موثق" : "Verified Buyer"}
+                                  {language === "ar"
+                                    ? "مشتري موثق"
+                                    : "Verified Buyer"}
                                 </div>
                               )}
                             </div>

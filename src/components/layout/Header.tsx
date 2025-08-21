@@ -9,15 +9,15 @@ import {
   User,
   Menu,
   X,
-  Mic,
+
   Sun,
   Moon,
   Kanban,
 } from "lucide-react";
 import { useCartStore } from "../../store/cartStore";
 import { useWishlistStore } from "../../store/wishListStore";
-import { useLanguage } from "../../providers/LanguageProvider";
-import { useTheme } from "../../providers/ThemeProvider";
+import { useLanguage } from "../../Providers/LanguageProvider";
+import { useTheme } from "../../Providers/ThemeProvider";
 
 const Header = () => {
   const { language, toggleLanguage, t } = useLanguage();

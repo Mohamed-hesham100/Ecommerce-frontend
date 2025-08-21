@@ -14,7 +14,7 @@ import {
 import ProductCard from "../components/products/ProductCard";
 import AddToCartModal from "../components/ui/AddToCartModal";
 import { useCartStore } from "../store/cartStore";
-import { useLanguage } from "../providers/LanguageProvider";
+import { useLanguage } from "../Providers/LanguageProvider";
 
 const ProductDetailsPage = () => {
   const { id } = useParams();

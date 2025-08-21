@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useTheme } from "../providers/ThemeProvider";
+import { useTheme } from "../Providers/ThemeProvider";
 import {
   BarChart3,
   Users,
@@ -26,7 +26,7 @@ import {
   Image,
   Video,
 } from "lucide-react";
-import { useLanguage } from "../providers/LanguageProvider";
+import { useLanguage } from "../Providers/LanguageProvider";
 import {
   ResponsiveContainer,
   LineChart,

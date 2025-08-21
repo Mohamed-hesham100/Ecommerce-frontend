@@ -13,7 +13,7 @@ import {
   Star,
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import { useLanguage } from "../../providers/LanguageProvider";
+import { useLanguage } from "../../Providers/LanguageProvider";
 
 interface AddToCartModalProps {
   isOpen: boolean;

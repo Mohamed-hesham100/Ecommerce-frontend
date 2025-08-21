@@ -11,8 +11,8 @@ import {
   Users,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import { useLanguage } from "../providers/LanguageProvider";
-import { useTheme } from "../providers/ThemeProvider";
+import { useLanguage } from "../Providers/LanguageProvider";
+import { useTheme } from "../Providers/ThemeProvider";
 import ProductCard from "../components/products/ProductCard";
 import CategoryCard from "../components/ui/CategoryCard";
 import TestimonialCard from "../components/ui/TestimonialCard";

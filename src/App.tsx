@@ -25,7 +25,7 @@ import AuthPage from './pages/AuthPage';
 import WishlistPage from './pages/WishlistPage.tsx';
 import ChatBot from './components/ai/ChatBot';
 import ThemeProvider from './providers/ThemeProvider';
-import CartProvider from './providers/CartProvider.tsx';
+import CartProvider from './Providers/CartProvider.tsx';
 import LanguageProvider from './providers/LanguageProvider';
 
 function App() {

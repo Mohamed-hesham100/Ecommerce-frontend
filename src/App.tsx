@@ -7,13 +7,13 @@ import ShopPage from "./pages/ShopPage";
 import ProductDetailsPage from "./pages/ProductDetailsPage";
 import CartPage from "./pages/CartPage";
 import CheckoutPage from "./pages/CheckoutPage";
-import UserDashboard from "./pages/UserDashboard.tsx";
+import UserDashboard from "./pages/UserDashboard";
 import BlogPage from "./pages/BlogPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
-import AIAssistantPage from "./pages/AiAssistantPage";
+import AiAssistantPage from "./pages/AiAssistantPage";
 import FAQPage from "./pages/FAQPage";
-import PrivacyPage from "./pages/PrivacyPage.tsx";
+import PrivacyPage from "./pages/PrivacyPage";
 import TermsPage from "./pages/TermsPage";
 import ReturnsPage from "./pages/ReturnsPage";
 import CareersPage from "./pages/CareersPage";
@@ -21,11 +21,11 @@ import SupportPage from "./pages/SupportPage";
 import OffersPage from "./pages/OffersPage";
 import AdminDashboard from "./pages/AdminDashboard";
 import AuthPage from "./pages/AuthPage";
-import WishlistPage from "./pages/WishlistPage.tsx";
+import WishlistPage from "./pages/WishlistPage";
 import ChatBot from "./components/ai/ChatBot";
-import ThemeProvider from "./providers/ThemeProvider.tsx";
-import CartProvider from "./providers/CartProvider.tsx";
-import LanguageProvider from "./providers/LanguageProvider.tsx";
+import ThemeProvider from "./Providers/ThemeProvider";
+import CartProvider from "./Providers/CartProvider";
+import LanguageProvider from "./Providers/LanguageProvider";
 
 function App() {
   return (
@@ -46,7 +46,7 @@ function App() {
                   <Route path="/blog" element={<BlogPage />} />
                   <Route path="/about" element={<AboutPage />} />
                   <Route path="/contact" element={<ContactPage />} />
-                  <Route path="/ai-assistant" element={<AIAssistantPage />} />
+                  <Route path="/ai-assistant" element={<AiAssistantPage />} />
                   <Route path="/faq" element={<FAQPage />} />
                   <Route path="/privacy" element={<PrivacyPage />} />
                   <Route path="/terms" element={<TermsPage />} />
